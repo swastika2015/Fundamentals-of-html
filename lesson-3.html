@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    //activity1
    <h2>Javascript objects and its properties</h2>
    <p>There are two ways to access object prperties</p>
    <p>You can use .property or ["property"]</p> 
@@ -20,6 +21,26 @@
       document.getElementById("demo").innerText = preson.firstname + "am" + person.age + "years old";
 
    </script>
+
+   //activity2
+
+   <p>Find the largest number with the help of argument objects</p>
+   <p id="result"></p>
+   <script>
+    function findMax(){
+        var i;
+        var max = 0;
+        for(i=0; i <arguments.length;i++){
+            if (arguments[i]> max){
+                max = arguments{i};
+            }
+        }
+        return max;
+        
+    }
+    
+   </script>
+
     
 </body>
 </html>

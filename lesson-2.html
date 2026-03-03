@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="firstFunction()">Click me</button>
+    <script>
+
+        //activity1 demonstration of function
+        function firstFunction() {
+            document.getElementsByTagName("button")[0].innerText = "you clicked me" 
+        }
+
+        //activity2 Variable scope
+        let a=2
+    function secondFunction(){
+        let b=10
+        console.log(a)
+    }
+    secondFunction()
+    // console.log(b)//will give you an error
+
+    //activity 3 function having arguments
+    function add(a,b) {
+     
+     console.log(a+b)
+    }
+    add(5,8)
+
+   //homework write a multiply function that takes in two arguments and logs the multiplication result in the console when called
+   function multiply(x,z){
+   console.log(x*z)
+   }
+   multiply(20,30)
+
+
+    </script>
+    
+</body>
+</html>

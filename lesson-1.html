@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="first-id"></h1>
+    <p id="second-id"></p>
+
+    <span id="result"></span>
+     <p id="answer"></p>
+    <script>
+        
+        //activity1 - adding content to tags using Javascript
+        document.getElementById("first-id").innerText = "this uses h1 tag"
+         document.getElementById("second-id").innerText = "this uses p tag"
+
+          //activity2 - using Javascript variables
+        let n1= 4
+        let n2= 5
+        let sum= n1+n2
+        document.getElementById("result").innerText = sum
+        
+        //homework store two numbers 10 and 20 in variables a and b respectively. multiply the two variables and show the result in a p tag with id as answer.
+        
+         let a= 10
+        let b= 20
+        let product= a*b
+        document.getElementById("answer").innerText = product
+        
+        
+
+        
+    </script>
+
+</body>
+</html>

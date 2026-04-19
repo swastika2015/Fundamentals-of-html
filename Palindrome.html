@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <h2>Palindrome Checker:</h2>
+    <input type="text" placeholder="enter string here">
+    <button onclick="checkPalindrome()">Check</button>
+    <p id="feedback"></p>
+     <button id="homework" >homework</button>
+     <br>
+     <br>
+     <button id="Mystry" >Mystry</button>
+     <br>
+     <br>
+     <button id="Red" >Red</button>
+     <br>
+     <br>
+     <button id="Green" >Green</button>
+    <script>
+        function checkPalindrome(){
+            const str = document.getElementsByTagName("input")[0].value
+            const reversedStr = str.split('').reverse().join('')
+
+          
+         if(reversedStr==str){
+            document.getElementById("feedback").innerText="Its a palindorme"
+        }  else  {
+            document.getElementById("feedback").innerText ="Its not a palindorme" 
+
+        }  
+        
+        
+      document.getElementsByTagName("input")[0].value=""
+        
+
+             
+        }
+
+       //homework - make a button with text homework. when this button is clicked, change the background color to light blue
+        
+    const button0 = document.getElementById('homework');
+
+        
+         button0.addEventListener('click',function() {
+            
+            document.body.style.backgroundColor = 'lightblue'});
+
+              const button2 = document.getElementById('Mystry');
+
+        
+         button2.addEventListener('click',function() {
+            
+            document.body.style.backgroundColor = 'Black'});
+
+              const button1 = document.getElementById('Red');
+
+        
+         button1.addEventListener('click',function() {
+            
+            document.body.style.backgroundColor = 'red'});
+
+              const button4 = document.getElementById('Green');
+
+        
+         button4.addEventListener('click',function() {
+            
+            document.body.style.backgroundColor = 'Green'});
+       
+       
+    </script>
+</body>
+</html>

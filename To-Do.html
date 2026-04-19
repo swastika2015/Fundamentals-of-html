@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+        ul{
+           list-style:none;
+           padding-inline:0px;
+        }
+     </style>
+</head>
+<body>
+    <h3>To-Do List</h3>
+    <input type="text" placeholder="add task here">
+    <button onclick="addTask()">Add</button>
+    
+    <button onclick="DeleteList()">Delete</button>
+    <ul></ul>
+
+    <script>
+        let ul= document.getElementsByTagName("ul")[0]
+        function addTask(){
+           let li= document.createElement("li")
+
+           let input=  document.createElement("input")
+          input. type="checkbox"
+          li.appendChild(input)
+
+         let label=  document.createElement("label")
+         label.innerText=document.getElementsByTagName("input")[0].value        
+          li.appendChild(label)
+
+         ul.appendChild(li)
+
+        
+           
+       document.getElementsByTagName("input")[0].value =""       
+         
+        }
+    //homework - create a Delete List button. when the user clicks on this button, all the li items in the list should get deleted
+  function DeleteList(){
+     
+      ul.innerText=""  
+  }
+     
+     
+        
+    </script>
+</body>
+</html>
